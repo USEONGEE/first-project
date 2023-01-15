@@ -47,13 +47,14 @@ def input_search(keyword):
 
 # soup, instance 화
 response = requests.get(url)
-def get_cordinate() :
-     html = driver.page_source
-     soup = BeautifulSoup(html, 'lxml')
-     content = soup.select('#result')
-     print(content)
-     content = str(content)
-     strlist.append(content)
+
+def get_cordinate():
+    html = driver.page_source
+    soup = BeautifulSoup(html, 'lxml')
+    content = soup.select('#result')
+    print(content)
+    content = str(content)
+    strlist.append(content)
 
 # pyautogui.mouseInfo()
 # F12 제일 작게 하고 가로 1000,1242
